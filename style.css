@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    overflow-y: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 16px 8%;
+}
+nav .menu{
+    width: 26px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav .logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    height: 30px;
+    width: 60px;
+    background: #fff;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    transition: background 0.3s;
+}
+button span{
+    height: 26px;
+    width: 26px;
+    background-color: #606060;
+    display: block;
+    border-radius: 50px;
+    margin-left: 2px;
+    transition: background-color 0.3s, margin-left 0.3s;
+}
+.lamp-light{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+.lamp-light .lamp{
+    width: 100%;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 700px;
+    margin-left: -8px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.text-container p{
+    font-size: 17px;
+}
+.text-container a {
+	background: #00986f;
+	padding: 14px 40px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	border-radius: 50px;
+	font-size: 17px;
+    cursor: pointer;
+}
+.active{
+    background: #00986f;
+}
+.active span{
+    margin-left: 30px;
+    background-color: #fff;
+}
+.on{
+    opacity: 1;
+}
